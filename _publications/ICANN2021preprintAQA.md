@@ -1,7 +1,7 @@
 ---
 title: "Human Action Quality Assesment from Videos"
 collection: publications
-permalink: /research/AQAWD\x
+permalink: /research/AQAWD/x
 excerpt: 'Action quality assessment (AQA) aims at automatically judging human action based on a
 video of the said action and assigning a performance score to it. The aim of this project in to build a system that is capable of judging and assigning a score to human actions by inspecting a video of the said action being performed. Such a system would have potential use in
 applications such as health care, sports video analysis, skill discrimination for a specific task etc. In this porject, we experiment with ResNets and a novel aggregation scheme titled Weight-Decider to achieve better performacne in benchmark dataset(MTL-AQA).'
