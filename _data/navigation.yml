@@ -1,22 +1,24 @@
 # main links links
 main:
-  - title: "Publications"
-    url: /publications/
+  - title: "Education"
+    url: /education/   
 
-  - title: "Talks"
-    url: /talks/    
+
+  - title: "Research"
+    url: /research/
+
+   
 
   - title: "Teaching"
     url: /teaching/    
     
-  - title: "Portfolio"
-    url: /portfolio/
+  - title: "Achievements"
+    url: /achievements/
         
-  - title: "Blog Posts"
-    url: /year-archive/
+ 
     
   - title: "CV"
     url: /cv/
     
-  - title: "Guide"
-    url: /markdown/
+
+#bundle exec jekyll serve --livereload
