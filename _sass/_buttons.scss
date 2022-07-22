@@ -153,16 +153,17 @@
 
   &--research{
     display: inline-block;
+    margin-left: 3.5em;
     margin-bottom: 0.25em;
     padding: 0.125em 0.25em;
     color: $research-button-color;
-    text-align: center;
+    text-align: left;
     text-decoration: none !important;
     border: 1px solid;
     border-color: $research-button-color;
     border-radius: $border-radius;
     cursor: pointer;
-
+  
     &:hover {
       color: #fff;
       background-color: $link-color !important;
