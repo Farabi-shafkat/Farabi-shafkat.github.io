@@ -10,7 +10,7 @@ redirect_from:
 {% include base_path %}
 
 
-<object width="400" height="500" type="application/pdf" data="/images/farabiCV(3).pdf">
+<object width="400" height="500" type="application/pdf" data="/images/farabiCV (10).pdf">
     <p>Insert your error message here, if the PDF cannot be displayed.</p>
 </object>
 
