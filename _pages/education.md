@@ -52,6 +52,34 @@ img {
 
 <div class="boxed">
 
+<img src='/images/George_Mason_University_logo.svg.png'  style="float: left;width:20%;">
+<div class = "title">
+    George Mason University
+</div>
+
+<div class = "semi-title">
+    PhD in Computer Science                   
+</div>
+<div class = "semisemi-title">
+  Farifax, Virginia, USA  <span class="tab"></span> August 2022 - Present                                              
+</div>
+<div class = "text">
+  <ul class = "text">
+    <li>
+        CGPA- 4 out of 4 (18 Credits Completed)
+    </li>
+    <li>
+        Notable Courses: Advanced Natural Language Processing, Intro to Artifical Intelligance, Analysis of Algorithms, Database systems
+    </li>
+  </ul>
+</div>
+</div>
+<p></p>
+
+
+
+<div class="boxed">
+
 <img src='/images/iutlogopng.png'  style="float: left;width:20%;">
 <div class = "title">
     Islamic University of Technology  

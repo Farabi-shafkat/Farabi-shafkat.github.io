@@ -81,12 +81,12 @@ analytics:
 author:
   name             : "Shafkat Farabi"
   avatar           : "dp.jpg"
-  bio              : "Lecturer, CSE"
-  location         : "Dhaka, Bangladesh"
-  employer         : "Islamic University of Technology"
+  bio              : "PhD Student"
+  location         : "Fairfax, VA"
+  employer         : "George Mason University"
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "https://scholar.google.com/citations?user=x0SCrx4AAAAJ&hl=en"
-  email            : "shafkatrahman@iut-dhaka.edu"
+  email            : "mfarabi@gmu.edu"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -114,8 +114,7 @@ author:
   xing             :
   youtube          :
   wikipedia        :
-  University_Page  : https://cse.iutoic-dhaka.edu/profile/shafkat
-
+ 
 
 # Reading Files
 include:
