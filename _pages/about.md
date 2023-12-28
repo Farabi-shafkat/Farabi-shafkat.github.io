@@ -8,9 +8,9 @@ redirect_from:
   - /about.html
 ---
 
-Hello! I am a computer science graduate who is currently working as a lecturer at my alma-mater [Islamic University of Technology](https://www.iutoic-dhaka.edu/). I have BSc in Computer Scinece and Engineering with honours with first class from the same institution. 
+Hello! I am a PhD student at George Mason University since Fall, 2022. I am also working as a graduate teaching assistant in the Computer Science department. My reaserch focus is in the intersection of Computer Vision and Natural Langauge Processing. Currently, I am working on sarcasm detection in social media from multimodal inputs. 
 
-My research interests include Computer Vision, Deep Learning, Machine Learning and their real world applications. During my undergraduate studies, I worked on problems related to Computer Vision using Deep learning. My undergraduate thesis is titled "Assessment of Human Actions from Videos Using Deep Residual Convolutional Neural Networks". This work is focused on assesing quality of human actions from videos using deep learning. During the course of completing this thesis, I acquired hands on experinace on how to find and read literature on a specific domain, how to find gaps in the literature and proposing solutions to bridge that gap. On top of this, during the course of thesis work, I acquired an extensive exposure to deep learning and computer vision. Currently I am continuiong this work as a part of CVlab in IUT.
+Previously, I worked as a lecturer at my alma-mater Islamic University of Technology. I have a BSc in Computer Scinece and Engineering with honours with first class from the same institution. 
 
-I love brainstorming to come up with solutions to complex problems and implementing them using programming languages. During my time as a student, I had participated in numerous ACM-ICPC style programming contests. I am currently associated with training sophomore and junior year studnets in IUT for competative programming. 
+I love brainstorming to come up with solutions to complex problems and implementing them using programming languages. During my time as a student, I had participated in numerous ACM-ICPC style programming contests. I also  trained sophomore and junior year studnets in IUT for competative programming. 
 
