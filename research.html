@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Research - Shafkat Farabi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="research.html">Research</a>
+    <a href="teaching.html">Teaching</a>
+  </nav>
+
+  <div class="container">
+    <h1>Research</h1>
+    
+
+    <div class="research-grid">
+
+      <!-- Project Card 1 -->
+      <div class="research-card">
+        <img src="Images\mediators.jpg.png" alt="Mediator Assignment">
+
+        <h2>Value-Added Based Algorithmic Matching of Mediators to Court Cases in Kenya</h2>
+        <p>In Kenyan Judiciary, cases go to mediation before trail. Mediators are court apppointed and licensed to work in specific courts and on certain case types.
+        This project focuses on developing an automated algorithm to match mediators with a focus to maximizer overall mediator success rate while managing caseload distribution.
+        We use Value Added model to estimate mediator contribution to case outcomes.<!-- Our proposed algorithm uses mediator VAs and models relaxed version of the problem using
+        Quadratic Programming and proposes mediators. It maximizes overall expected case success rate while ensuring mediator case capacity constraints are met. Capacity cosntraint violations are 
+        allowed when deemed benifical by the algorithm, and a penalty is introduced in the objective function to manage such violations. Mediators can be 'held back' for better caseload management 
+        using sampled shadow cases from case arrival distribution. Preliminary results show the proposed algorithm can be tuned to outperform current manual asisgnment, and greedy baseline either on 
+        overall case success rate or on management in caseload distribution. -->
+
+        This work is being done in collaboration with the World Bank. 
+         </p>
+        </p>
+      </div>
+
+      <!-- Project Card 2 -->
+      <div class="research-card">
+        <img src="Images\streetlevelAI.png" alt="LLM Decision Support">
+        <h2>Street-Level AI: Are Large Language Models Ready for Real-World Judgments?</h2>
+        <p>We explore the feasibility of LLMs in replacing street level bureaucrats. Specifically, we focus on homeless resource allocations at St Louis, MO. </p>
+        <p>First, we compare how LLMs(GPT4, Gemma, LLaMA, Gemini etc.) allocate interventions when given a pair of households from St Louis HMIS dataset. We compare these decisions with
+            non-expert humans in whether they consistently prioritize vulnerability or outcome. Secondly, we use LLMs to induce rankings of households by their vulnerability and compare with
+        well established tools like VI-SPDAT and RMFS. Our findings lead us to believe LLMs are inconsistent in judging the vulnerability of households, and they are not prepared to replace
+        expert case workers.</p>
+        <a href="https://arxiv.org/pdf/2508.08193" target="_blank">Accepted for publication at AIES 2025</a>
+      </div>
+
+      <!-- Project Card 3 -->
+      <div class="research-card">
+        <img src="Images/survey.png" alt="Survey Research">
+        <h2>A Survey of Multimodal Sarcasm Detection</h2>
+        <p>As part of literature study for multimodal sarcasm detection, we review existing approaches and datasets in the field. We survey papers published between 2018
+        and 2023 on the topic, and discuss the models and
+        datasets used for this task. We also present future
+        research directions in MSD</p>
+        <a href="https://www.ijcai.org/proceedings/2024/0887.pdf" target="_blank">Published at IJCAI 2024</a>
+      </div>
+
+      <!-- Project Card 4 -->
+      <div class="research-card">
+        <img src="Images/mentalhelp.png" alt="Mental Health Research">
+        <h2>MentalHelp: A Multi-Task Dataset for Mental Health in Social Media</h2>
+        <p> We construct a Large Scale semi supervised multitask dataset for mental illness detection tasks
+	  by fine tuning BERT based language models on smaller datasets of different mental health tasks. We
+	  use ensemble of these models to generate labels for combined dataset for all tasks. We performed a comprehensive evaluation of 10 pre-trained and task fine tuned models on 11 benchmark datasets
+	 
+        <a href="https://aclanthology.org/2024.lrec-main.977.pdf" target="_blank">Published at LREC COLING 2024</a>
+      </div>
+
+      <!-- Project Card 5 -->
+      <div class="research-card">
+        <img src="Images/aqa.png" alt="Mental Health Research">
+        <h2>Action Quality Assessment Using Weighted Aggregation</h2>
+        <p> Action quality assessment (AQA) aims at automatically judging human action based on a video of the said action and assigning a performance score to it. The majority of works in the existing literature on AQ divide RGB videos into short clips, transform these clips to higher
+level representations using Convolutional 3D (C3D) networks, and aggre
+gate them through averaging. These higher-level representations are used
+ to perform AQA. We nd that the current clip level feature aggregation
+ technique of averaging is insu cient to capture the relative importance of
+ clip level features. In this work, we propose a learning-based weighted
+averaging technique. Using this technique, better performance can be
+ obtained without sacri cing too much computational resources. We call
+ this technique Weight-Decider(WD). We also experiment with ResNets
+ for learning better representations for action quality assessment. We as
+sess the e ects of the depth and input clip size of the convolutional
+ neural network on the quality of action score predictions. We achieve a
+ new state-of-the-art Spearmans rank correlation of 0.9315 (an increase
+ of 0.45%) on the MTL-AQA dataset using a 34 layer (2+1)D ResNet
+ with the capability of processing 32 frame clips, with WD aggregation.</p>
+        <a href="https://github.com/Farabi-shafkat/Improving-Action-Quality-Assessment-using-ResNets-and-Weighted-Aggregation" target="_blank">Published at IBPRIA 2022</a>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="container">
+    © 2025 Shafkat Farabi
+  </footer>
+
+</body>
+</html>
