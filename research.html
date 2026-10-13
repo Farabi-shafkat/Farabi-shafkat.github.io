@@ -19,21 +19,38 @@
 
     <div class="research-grid">
 
+      <!-- Scarcity and Predictive Uncertainty Project -->
+      <div class="research-card">
+        <img src="Images/scarcity-predictive-uncertainty.png" alt="Marginal benefit versus initial state for three levels of predictive uncertainty, with the threshold marked at x = θ.">
+        <h2>Scarcity and Predictive Uncertainty: Implications for Societal Resource Allocation</h2>
+        <p>An emerging literature examines the critical question of when and how prediction can be useful in allocating scarce societal resources. We examine a novel variant of this question: What happens when predictive uncertainty differs systematically across the population? This can occur in several situations; for example, when machine learning models have significantly different accuracies across different demographics. We show that this uncertainty has serious implications for resource allocation when coupled with commonly used binary measures of societal benefit from allocation. We formulate a novel mathematical model of scarce resource allocation that accounts for heterogeneous predictive uncertainties and analyze implications for both the allocation mechanism and the realized population-level benefits. We find that when resources are very scarce, maximum marginal benefit (MMB) prioritization favors individuals with lower predictive uncertainty even at the identical underlying initial state. However, we observe a flip in prioritization when resources are abundant, targeting higher-uncertainty individuals. We illustrate the implications of our results on the PISA educational testing dataset. Our findings have meaningful ramifications for the distributional outcomes of prioritization policies in many domains touched by the theory of local justice, including the allocation of public education resources, medical triage, and homelessness services. They also reveal a new moral dilemma in the ethics of scarce resource allocation - is it just to allocate a resource to one person over another solely based on predictive uncertainty about their futures? We also assess efficiency losses under both MMB and the vulnerability-first (VF) prioritization. Our model predicts efficiency losses across all resource levels, but particularly in low-resource settings.</p>
+        <p class="publication-links">
+          <a href="https://arxiv.org/pdf/2608.04251" target="_blank" rel="noopener noreferrer">arXiv</a>
+          <span><a href="posters/scarcity-predictive-uncertainty.pdf" target="_blank" rel="noopener noreferrer">Poster</a> (Presented at IJCAI 2026 CFD workshop)</span>
+        </p>
+      </div>
+
+      <!-- LLM Ranking Project -->
+      <div class="research-card">
+        <img src="Images/llm-ranking-consistency.png" alt="Intra-run consistency versus ranking accuracy and inter-run agreement for rankings of 20, 50, and 100 items.">
+        <h2>Can LLMs Rank? A Tale of Triads and Triage</h2>
+        <p>From housing allocation for households experiencing homelessness to triage in emergency departments, LLMs are increasingly being considered as judges of consequential decisions that require ranking people for scarce resources. Ranking large groups simultaneously is cognitively demanding and error-prone. A natural solution, drawing on decades of social choice theory, elicits pairwise comparisons and aggregates them into a total order. However, a fundamental question remains when LLMs serve as the pairwise judge: how can a practitioner tell, before committing to a ranking, whether the LLM's judgments are sufficiently consistent to trust the result? We discuss two different ways of identifying consistency. A classical diagnostic, the coefficient of consistency ζ, originally developed to measure judge reliability by counting circular triads in tournament graphs, provides a cheap, model-free measure of intra-run consistency. Various standard measures of distance between rankings, for example Kendall's τ, can measure inter-run variability. We show, in both theory and practice, that these measures are independently valuable, and advocate for using both to assess reliability of rankings. We demonstrate the practical importance of our results across two high-stakes prioritization tasks: homelessness service allocation and emergency department triage. Three different leading LLMs have considerably different performance profiles across these two axes of consistency. We provide guidelines for how practitioners could think about measuring and assessing consistency before committing to a model for ranking or prioritization.</p>
+        <p class="publication-links">
+          <a href="https://arxiv.org/pdf/2606.30412" target="_blank" rel="noopener noreferrer">Accepted for publication at AIES 2026</a>
+          <a href="posters/can-llms-rank.pdf" target="_blank" rel="noopener noreferrer">Poster</a>
+        </p>
+      </div>
+
       <!-- Project Card 1 -->
       <div class="research-card">
-        <img src="Images\mediators.jpg.png" alt="Mediator Assignment">
+        <img class="mediator-figure" src="Images/mediator-capacity.png" alt="Mediator loads over days 150–200 for three capacity penalty settings, showing load under capacity in green and overload in red.">
 
-        <h2>Value-Added Based Algorithmic Matching of Mediators to Court Cases in Kenya</h2>
-        <p>In Kenyan Judiciary, cases go to mediation before trail. Mediators are court apppointed and licensed to work in specific courts and on certain case types.
-        This project focuses on developing an automated algorithm to match mediators with a focus to maximizer overall mediator success rate while managing caseload distribution.
-        We use Value Added model to estimate mediator contribution to case outcomes.<!-- Our proposed algorithm uses mediator VAs and models relaxed version of the problem using
-        Quadratic Programming and proposes mediators. It maximizes overall expected case success rate while ensuring mediator case capacity constraints are met. Capacity cosntraint violations are 
-        allowed when deemed benifical by the algorithm, and a penalty is introduced in the objective function to manage such violations. Mediators can be 'held back' for better caseload management 
-        using sampled shadow cases from case arrival distribution. Preliminary results show the proposed algorithm can be tuned to outperform current manual asisgnment, and greedy baseline either on 
-        overall case success rate or on management in caseload distribution. -->
-
-        This work is being done in collaboration with the World Bank. 
-         </p>
+        <h2>SMaRT: Online Reusable Resource Assignment and an Application to Mediation in the Kenyan Judiciary</h2>
+        <p>Motivated by the problem of assigning mediators to cases in the Kenyan judicial system, we study an online resource allocation problem where incoming tasks (cases) must be immediately assigned to available, capacity-constrained resources (mediators). The resources differ in their quality, which may need to be learned. In addition, resources can only be assigned to a subset of tasks that overlaps to varying degrees with the subset of tasks other resources can be assigned to. The objective is to maximize task completion while satisfying soft capacity constraints across all the resources. The scale of the real-world problem poses substantial challenges, since there are over 2000 mediators, and a multitude of combinations of geographic locations (87) and case types (12) that each mediator is qualified to work on. Together, these features—unknown quality of new resources (newly onboarded mediators), soft capacity constraints (due to the mandate to assign cases without delay), and high-dimensional state space—make existing scheduling and resource allocation algorithms either inapplicable or inefficient. We formalize the problem in a tractable manner, using a quadratic program formulation for assignment and a multi-agent bandit style framework for learning. We demonstrate the key properties and advantages of our new algorithm, SMaRT (Selecting Mediators that are Right for the Task), compared with baselines on some stylized instances of the mediator allocation problem. We then turn to considering its application to real-world data on cases and mediators from the Kenyan Judiciary. SMaRT outperforms baselines and allows for controlling the tradeoff between the strictness of the capacity constraints and overall case resolution rates, both in situations where mediator quality is known beforehand and when the problem is bandit-like in that learning is part of the problem definition. On the strength of these results, we plan to conduct a randomized controlled trial in which we deploy SMaRT in the Judiciary’s mediation management system.</p>
+        <p class="publication-links">
+          <a href="https://www.ijcai.org/proceedings/2026/0794.pdf" target="_blank" rel="noopener noreferrer">Published at IJCAI 2026</a>
+          <a href="https://openknowledge.worldbank.org/entities/publication/53c5a61f-9a4f-40ec-80c4-e65f1da7732d" target="_blank" rel="noopener noreferrer">World Bank Policy Research Working Paper 11456</a>
+          <a href="posters/smart.pdf" target="_blank" rel="noopener noreferrer">Poster</a>
         </p>
       </div>
 
@@ -41,12 +58,11 @@
       <div class="research-card">
         <img src="Images\streetlevelAI.png" alt="LLM Decision Support">
         <h2>Street-Level AI: Are Large Language Models Ready for Real-World Judgments?</h2>
-        <p>We explore the feasibility of LLMs in replacing street level bureaucrats. Specifically, we focus on homeless resource allocations at St Louis, MO. </p>
-        <p>First, we compare how LLMs(GPT4, Gemma, LLaMA, Gemini etc.) allocate interventions when given a pair of households from St Louis HMIS dataset. We compare these decisions with
-            non-expert humans in whether they consistently prioritize vulnerability or outcome. Secondly, we use LLMs to induce rankings of households by their vulnerability and compare with
-        well established tools like VI-SPDAT and RMFS. Our findings lead us to believe LLMs are inconsistent in judging the vulnerability of households, and they are not prepared to replace
-        expert case workers.</p>
-        <a href="https://arxiv.org/pdf/2508.08193" target="_blank">Accepted for publication at AIES 2025</a>
+        <p>A surge of recent work explores the ethical and societal implications of large-scale AI models that make “moral” judgments. Much of this literature focuses either on alignment with human judgments through various thought experiments or on the group fairness implications of AI judgments. However, the most immediate and likely use of AI is to help or fully replace the so-called street-level bureaucrats, the individuals deciding to allocate scarce social resources or approve benefits. There is a rich history underlying how principles of local justice determine how society decides on prioritization mechanisms in such domains. In this paper, we examine how well LLM judgments align with human judgments, as well as with socially and politically determined vulnerability scoring systems currently used in the domain of homelessness resource allocation. Crucially, we use real data on those needing services (maintaining strict confidentiality by only using local large models) to perform our analyses. We find that LLM prioritizations are extremely inconsistent in several ways: internally on different runs, between different LLMs, and between LLMs and the vulnerability scoring systems. At the same time, LLMs demonstrate qualitative consistency with lay human judgments in pairwise testing. Findings call into question the readiness of current generation AI systems for naive integration in high-stakes societal decision-making.</p>
+        <p class="publication-links">
+          <a href="https://arxiv.org/pdf/2508.08193" target="_blank" rel="noopener noreferrer">Published at AIES 2025</a>
+          <a href="posters/street-level-ai.pdf" target="_blank" rel="noopener noreferrer">Poster</a>
+        </p>
       </div>
 
       <!-- Project Card 3 -->
@@ -64,11 +80,11 @@
       <div class="research-card">
         <img src="Images/mentalhelp.png" alt="Mental Health Research">
         <h2>MentalHelp: A Multi-Task Dataset for Mental Health in Social Media</h2>
-        <p> We construct a Large Scale semi supervised multitask dataset for mental illness detection tasks
+        <p> We construct a large scale semi supervised multitask dataset for mental illness detection tasks
 	  by fine tuning BERT based language models on smaller datasets of different mental health tasks. We
 	  use ensemble of these models to generate labels for combined dataset for all tasks. We performed a comprehensive evaluation of 10 pre-trained and task fine tuned models on 11 benchmark datasets</p>
 	 
-        <a href="https://aclanthology.org/2024.lrec-main.977.pdf" target="_blank">Published at LREC COLING 2024</a>
+        <a href="https://aclanthology.org/2024.lrec-main.977.pdf" target="_blank">Published at LREC-COLING 2024</a>
       </div>
 
       <!-- Project Card 5 -->
@@ -76,7 +92,7 @@
         <img src="Images/aqa.png" alt="Mental Health Research">
         <h2>Action Quality Assessment Using Weighted Aggregation</h2>
         <p> Action quality assessment (AQA) aims at automatically judging human action based on a video of the said action and assigning a performance score to it. The majority of works in the existing literature on AQ divide RGB videos into short clips, transform these clips to higher
-level representations using Convolutional 3D (C3D) networks, and aggre
+level representations using convolutional 3D (C3D) networks, and aggre
 gate them through averaging. These higher-level representations are used
  to perform AQA. We nd that the current clip level feature aggregation
  technique of averaging is insu cient to capture the relative importance of
